@@ -1,0 +1,16 @@
+{
+  "name": "meme-serve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jimp": "^0.12.1"
+  }
+}
