@@ -9,7 +9,7 @@ npm install
 
 ## Run the App
 ```
-npm run server
+npm start
 ```
 
 ## API Documentation
