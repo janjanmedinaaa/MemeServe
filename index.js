@@ -5,6 +5,8 @@ const app = express();
 const Default = require('./src/default');
 const editor = require('./src/editor');
 
+app.set('port', process.env.PORT || Default.PORT);
+
 app.get('/', (req, res) => {
   renderImage(req, res, false)
 });
@@ -37,6 +39,6 @@ const renderImage = (req, res, download) => {
     })
 }
 
-app.listen(Default.PORT, () => {
-  console.log('Listening on Port:', Default.PORT)
+app.listen(app.get('port'), () => {
+  console.log('Listening on Port:', app.get('port'))
 });
